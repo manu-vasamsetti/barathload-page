@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatLoads - Transforming India's Logistics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="BharatLoads Logo">
+                </div>
+                <button class="mobile-menu-btn" onclick="location.href='#features'">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#download" class="cta-button">Download App</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transform Your Logistics with BharatLoads</h1>
+                    <p>Connect with transporters and truck owners through our innovative, map-based load-truck matching platform</p>
+                    <div class="cta-buttons">
+                        <a href="#download" class="primary-button">Download Now</a>
+                        <a href="#learn-more" class="secondary-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-app.png" alt="BharatLoads App Interface">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Core Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Smart Load-Truck Matching</h3>
+                        <p>Find the perfect match with our location-based intelligent matching system</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Real-Time Updates</h3>
+                        <p>Stay informed with instant updates on available loads and trucks</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Transparent Marketplace</h3>
+                        <p>Access clear pricing, availability, and ratings for informed decisions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About BharatLoads</h2>
+                    <p>We are revolutionizing India's logistics industry by leveraging technology to create seamless connections between transporters and truck owners. Our platform drives efficiency, transparency, and profitability in the logistics sector.</p>
+                    <div class="vision-mission">
+                        <div class="vision">
+                            <h3>Our Vision</h3>
+                            <p>Creating a future where technology enables seamless logistics operations, fostering collaboration and growth in the transportation industry.</p>
+                        </div>
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <p>Redefining transportation through an intuitive platform that makes logistics faster, more reliable, and profitable for all stakeholders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download">
+            <div class="container">
+                <h2>Get Started Today</h2>
+                <p>Download the BharatLoads app and join the future of logistics</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-store">
+                        <img src="images/app-store.png" alt="Download on App Store">
+                    </a>
+                    <a href="#" class="play-store">
+                        <img src="images/play-store.png" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="BharatLoads Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#careers">Careers</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Resources</h4>
+                        <a href="#blog">Blog</a>
+                        <a href="#help">Help Center</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Contact Us</h4>
+                        <p class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i> Jamshedpur, Jharkhand<br>
+                            <i class="fas fa-envelope"></i> <a href="mailto:bharatloads@gmail.com">bharatloads@gmail.com</a><br>
+                            <i class="fas fa-phone"></i> <a href="tel:+919693736187">+91-9693736187</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BharatLoads. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.mobile-menu-btn') && !event.target.closest('.nav-links')) {
+                document.querySelector('.nav-links').classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
